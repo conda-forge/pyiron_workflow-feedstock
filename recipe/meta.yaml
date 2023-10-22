@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: b1dc9581fef4d3ec4946ea798544ac02f54eabecf1ca8e961194d4e5e15929c5
+  sha256: 36b01d448f6e251e20d55317dcd54197a14eff7ea745c4db95eef2f9a992003e
   patches:
     - versioneer.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - bidict >=0.22.1
     - cloudpickle >=2.2.1
     - python-graphviz >=0.20.1
-    - maggma >=0.57.1
+    - maggma >=0.57.4
     - matplotlib-base >=3.8.0
     - numpy >=1.26.0
     - pyiron_atomistics >=0.3.4
