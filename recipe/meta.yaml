@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
   sha256: 36b01d448f6e251e20d55317dcd54197a14eff7ea745c4db95eef2f9a992003e
-  patches:
-    - versioneer.patch
 
 build:
   noarch: python
