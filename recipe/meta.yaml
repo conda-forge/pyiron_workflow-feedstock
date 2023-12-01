@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: b11ae3a80b1c7c5911c8609550ee5e981cf753e7eae255dc718864af53faf470
+  sha256: 0db19e57722d9e171fef4146fc672118dffb1a927f021cd635ad170a6a7367b3
 
 build:
   noarch: python
@@ -19,15 +19,16 @@ requirements:
     - python >=3.6
     - pip
   run:
+    - pympipool >=0.7.9
     - python >=3.6
     - bidict >=0.22.1
     - cloudpickle >=3.0.0
     - python-graphviz >=0.20.1
     - maggma >=0.57.4
-    - matplotlib-base >=3.8.1
+    - matplotlib-base >=3.8.2
     - numpy >=1.26.0
     - pyiron_atomistics >=0.3.4
-    - pyiron_base >=0.6.8
+    - pyiron_base >=0.6.9
     - toposort >=1.10
     - typeguard >=4.1.5
 
