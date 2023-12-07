@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.10
     - pip
   run:
     - pympipool >=0.7.9
-    - python >=3.6
+    - python >=3.10
     - bidict >=0.22.1
     - cloudpickle >=3.0.0
     - python-graphviz >=0.20.1
