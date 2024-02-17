@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: d1d7b5b8fe2bf0b9c6622f368bb7a1553408bc8a9c6fe9ea36c5adcb5c898874
+  sha256: 800b0d71bc5e74349906264859799a87812a25d4ddbaaa248c1c4e9587812a83
 
 build:
   noarch: python
@@ -19,7 +19,10 @@ requirements:
     - python >=3.10
     - pip
   run:
-    - pympipool >=0.7.9
+    - h5io >=0.2.2
+    - h5io_browser >=0.0.9
+    - pyiron_contrib >=0.1.15
+    - pympipool >=0.7.13
     - python >=3.10
     - bidict >=0.22.1
     - cloudpickle >=3.0.0
