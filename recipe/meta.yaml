@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: 797d9a25cd86d185e2163d3fb6231f30fc1d310219c31f5bd838564a0d8e3bb4
+  sha256: 04398a232ac9450ca4a47adb3ed1ba845b951ad1e8ab3c22c7bbb284d6ec2c78
 
 build:
   noarch: python
@@ -16,21 +16,36 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python >=3.10,<3.13
     - pip
+    - toml
+    - versioneer
+    - pandas
+    - pyiron_base
+    - h5io
+    - h5io_browser
+    - pyiron_contrib
+    - pympipool
+    - bidict
+    - cloudpickle
+    - python-graphviz
+    - matplotlib-base
+    - toposort
+    - typeguard
   run:
-    - pyiron_base >=0.8.3
-    - h5io >=0.2.2
-    - h5io_browser >=0.0.12
-    - pyiron_contrib >=0.1.16
-    - pympipool >=0.8.0
-    - python >=3.10
-    - bidict >=0.23.1
-    - cloudpickle >=3.0.0
-    - python-graphviz >=0.20.3
-    - matplotlib-base >=3.8.4
-    - toposort >=1.10
-    - typeguard >=4.2.1
+    - pandas >=2.2.0,<2.3.0
+    - pyiron_base ==0.8.3
+    - h5io ==0.2.2
+    - h5io_browser ==0.0.12
+    - pyiron_contrib ==0.1.16
+    - pympipool ==0.8.0
+    - python >=3.10,<3.13
+    - bidict >=0.23.0,<=0.23.1
+    - cloudpickle >=3.0.0,<3.1.0
+    - python-graphviz >=0.20.0,<=0.20.3
+    - matplotlib-base >=3.8.4,<3.9.0
+    - toposort ==1.10
+    - typeguard >=4.2.0,<4.3.0
 
 test:
   imports:
