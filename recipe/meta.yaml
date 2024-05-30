@@ -18,6 +18,8 @@ requirements:
   host:
     - python >=3.10,<3.13
     - pip
+    - toml
+    - versioneer
   run:
     - pandas >=2.2.0,<2.3.0
     - pyiron_base ==0.8.3
