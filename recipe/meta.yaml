@@ -20,6 +20,18 @@ requirements:
     - pip
     - toml
     - versioneer
+    - pandas
+    - pyiron_base
+    - h5io
+    - h5io_browser
+    - pyiron_contrib
+    - pympipool
+    - bidict
+    - cloudpickle
+    - python-graphviz
+    - matplotlib-base
+    - toposort
+    - typeguard
   run:
     - pandas >=2.2.0,<2.3.0
     - pyiron_base ==0.8.3
