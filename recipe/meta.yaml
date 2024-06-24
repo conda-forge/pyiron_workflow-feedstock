@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: 04398a232ac9450ca4a47adb3ed1ba845b951ad1e8ab3c22c7bbb284d6ec2c78
+  sha256: c2d65f279f8b942f57f93a72422d9509cc5421864aa4c4ee963bda9bd91ec82d
 
 build:
   noarch: python
@@ -33,19 +33,20 @@ requirements:
     - toposort
     - typeguard
   run:
+    - pyiron_snippets >=0.1.0,<=0.1.2
     - pandas >=2.2.0,<2.3.0
-    - pyiron_base ==0.8.3
-    - h5io ==0.2.2
-    - h5io_browser ==0.0.12
-    - pyiron_contrib ==0.1.16
-    - pympipool ==0.8.0
+    - pyiron_base >=0.8.3,<=0.9.4
+    - h5io >=0.2.2,<=0.2.3
+    - h5io_browser >=0.0.12,<=0.0.15
+    - pyiron_contrib >=0.1.16,<=0.1.17
+    - pympipool >=0.8.0,<=0.8.4
     - python >=3.10,<3.13
     - bidict >=0.23.0,<=0.23.1
     - cloudpickle >=3.0.0,<3.1.0
     - python-graphviz >=0.20.0,<=0.20.3
     - matplotlib-base >=3.8.4,<3.9.0
     - toposort ==1.10
-    - typeguard >=4.2.0,<4.3.0
+    - typeguard >=4.2.0,<4.4.0
 
 test:
   imports:

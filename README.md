@@ -145,6 +145,7 @@ Feedstock Maintainers
 
 * [@jan-janssen](https://github.com/jan-janssen/)
 * [@liamhuber](https://github.com/liamhuber/)
+* [@niklassiemer](https://github.com/niklassiemer/)
 * [@pmrv](https://github.com/pmrv/)
 * [@pyiron-runner](https://github.com/pyiron-runner/)
 * [@srmnitc](https://github.com/srmnitc/)
