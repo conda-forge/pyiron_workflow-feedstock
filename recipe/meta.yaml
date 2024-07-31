@@ -40,7 +40,6 @@ requirements:
     - h5io >=0.2.2,<=0.2.4
     - h5io_browser >=0.0.12,<=0.0.16
     - pyiron_contrib >=0.1.16,<=0.1.17
-    - pympipool >=0.8.0,<=0.9.1
     - python >=3.10,<3.13
     - bidict >=0.23.0,<=0.23.1
     - cloudpickle >=3.0.0,<3.1.0
