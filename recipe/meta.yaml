@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: 87c6546a8ba7892932b7fd7ad904639b56dcc2f924b39df0dbd79b6e61bff1d7
+  sha256: e1e960fbb9ce41283d007122e00417e7d7c1771f873a47a1e7684421e4386a31
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -32,7 +32,7 @@ requirements:
     - python >=3.10,<3.13
     - bidict >=0.23.0,<=0.23.1
     - cloudpickle >=3.0.0,<3.1.0
-    - executorlib ==0.0.1
+    - executorlib >=0.0.1,<=0.0.2
     - pandas >=2.2.0,<2.3.0
     - pyiron_snippets ==0.1.4
     - python-graphviz >=0.20.0,<=0.20.3
