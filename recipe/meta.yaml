@@ -24,6 +24,7 @@ requirements:
     - cloudpickle
     - executorlib
     - pandas
+    - pint
     - pyiron_snippets
     - python-graphviz
     - toposort
