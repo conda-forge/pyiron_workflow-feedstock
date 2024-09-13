@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: e1e960fbb9ce41283d007122e00417e7d7c1771f873a47a1e7684421e4386a31
+  sha256: eaae0d37b44a29fa6858a2f0f28913518e581f0558067353656f60f4c6af1044
 
 build:
   noarch: python
@@ -29,6 +29,7 @@ requirements:
     - toposort
     - typeguard
   run:
+    - pint >=0.23.0,<=0.24.3
     - python >=3.10,<3.13
     - bidict >=0.23.0,<=0.23.1
     - cloudpickle >=3.0.0,<3.1.0
