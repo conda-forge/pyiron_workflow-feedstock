@@ -1,5 +1,5 @@
 {% set name = "pyiron_workflow" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: eaae0d37b44a29fa6858a2f0f28913518e581f0558067353656f60f4c6af1044
+  sha256: 11f77b4f248008531a4f7496a65505f1788be1d13f23f3d9ee9c743294a67ec8
 
 build:
   noarch: python
