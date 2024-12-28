@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pyiron_workflow" %}
 {% set version = "0.11.2" %}
 
@@ -12,11 +13,11 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10,<3.13
+    - python {{ python_min }}
     - pip
     - toml
     - versioneer
@@ -29,8 +30,9 @@ requirements:
     - python-graphviz
     - toposort
     - typeguard
+    - setuptools
   run:
-    - python >=3.10,<3.13
+    - python >={{ python_min }},<3.13
     - bidict >=0.23.0,<=0.23.1
     - cloudpickle >=3.0.0,<3.2.0
     - executorlib >=0.0.1,<=0.0.5
@@ -48,6 +50,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyiron/pyiron_workflow
