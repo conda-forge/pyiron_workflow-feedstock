@@ -30,6 +30,7 @@ requirements:
     - python-graphviz
     - toposort
     - typeguard
+    - setuptools
   run:
     - python >={{ python_min }},<3.13
     - bidict >=0.23.0,<=0.23.1
