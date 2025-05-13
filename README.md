@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyiron_workflow-green.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyiron__workflow-green.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyiron_workflow.svg)](https://anaconda.org/conda-forge/pyiron_workflow) |
 
 Installing pyiron_workflow
 ==========================
