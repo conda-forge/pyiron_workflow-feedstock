@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "pyiron_workflow" %}
-{% set version = "0.13.3" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: 19350a43ae0468e85bdaea7d56ed708a4a50f9fca35b962ab5f9c7d4f8bc60d6
+  sha256: 9b73e0da94dd416c0c5589c975b99460f41ab4e5c83ab922f824d06a0e6bcdfa
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - pip
     - toml
     - versioneer
+    - bagofholding
     - bidict
     - cloudpickle
     - executorlib
@@ -32,14 +33,15 @@ requirements:
     - typeguard
     - setuptools
   run:
-    - python >={{ python_min }},<3.13
-    - bidict >=0.23.0,<=0.23.1
+    - bagofholding >=0.1.0,<=0.1.2
+    - python >={{ python_min }},<3.14
+    - bidict ==0.23.1
     - cloudpickle >=3.0.0,<3.2.0
-    - executorlib >=0.0.1,<1.5.0
-    - pandas >=2.2.0,<2.4.0
-    - pint >=0.23.0,<=0.24.4
+    - executorlib >=1.5.3,<1.7.0
+    - pandas >=2.2.2,<2.4.0
+    - pint >=0.24,<=0.24.4
     - pyiron_snippets >=0.1.4,<=0.2.0
-    - python-graphviz >=0.20.0,<=0.20.3
+    - python-graphviz >=0.20.0,<=0.21
     - toposort ==1.10
     - typeguard >=4.2.0,<4.5.0
 
