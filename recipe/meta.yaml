@@ -21,6 +21,7 @@ requirements:
     - pip
     - toml
     - versioneer
+    - bagofholding
     - bidict
     - cloudpickle
     - executorlib
