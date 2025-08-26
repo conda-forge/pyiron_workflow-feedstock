@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pyiron_workflow" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: a662839db292ab7fa9d7ebcf38574c5bddd2a5edc557aed904bc7d88c5823163
+  sha256: 1b58d8e66bb52f092ab86b34a34a3e0d31d9aa597629429134c80c5058857644
 
 build:
   noarch: python
@@ -39,7 +39,7 @@ requirements:
     - cloudpickle >=3.0.0,<3.2.0
     - executorlib >=1.5.3,<1.7.0
     - pandas >=2.2.2,<2.4.0
-    - pint >=0.24,<=0.24.4
+    - pint >=0.24,<=0.25
     - pyiron_snippets >=0.1.4,<=0.2.0
     - python-graphviz >=0.20.0,<=0.21
     - toposort ==1.10
