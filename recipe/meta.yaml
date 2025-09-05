@@ -29,6 +29,8 @@ requirements:
     - pint
     - pyiron_snippets
     - python-graphviz
+    - rdflib
+    - semantikon
     - toposort
     - typeguard
     - setuptools
