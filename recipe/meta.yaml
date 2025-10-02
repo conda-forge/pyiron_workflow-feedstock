@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pyiron_workflow" %}
-{% set version = "0.15.2" %}
+{% set version = "0.15.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: e114e363374f52b5334131823bd1e22e7df6e5901cd6da9c065b56690ba09101
+  sha256: 1b77d03af39d5f1b6dffb723f90c3f66b21b08a86e09383164124caed447b29a
 
 build:
   noarch: python
@@ -37,11 +37,11 @@ requirements:
   run:
     - rdflib >=7.1.4,<7.2.0
     - semantikon ==0.0.22
-    - bagofholding >=0.1.0,<=0.1.3
+    - bagofholding >=0.1.0,<=0.1.4
     - python >={{ python_min }},<3.14
     - bidict ==0.23.1
     - cloudpickle >=3.0.0,<3.2.0
-    - executorlib >=1.5.3,<1.7.0
+    - executorlib >=1.5.3,<1.8.0
     - pandas >=2.2.2,<2.4.0
     - pint >=0.24,<=0.25
     - pyiron_snippets >=0.1.4,<=0.2.0
