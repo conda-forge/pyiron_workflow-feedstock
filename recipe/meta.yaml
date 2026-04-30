@@ -25,6 +25,8 @@ requirements:
     - bidict
     - cloudpickle
     - executorlib
+    - flowrep
+    - networkx
     - pandas
     - pint
     - pyiron_snippets
