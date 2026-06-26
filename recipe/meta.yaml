@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "pyiron_workflow" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: ae32424b3f8d2529eeab6c6b60ecf03e8ec4a6bc064e16c2c57191a49b5411b8
+  sha256: 2d6668bcde3990ea09da93c363008797549aa4881784a5d7d8835d08f7c86926
 
 build:
   noarch: python
