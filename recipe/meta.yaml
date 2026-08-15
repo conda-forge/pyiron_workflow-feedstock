@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "pyiron_workflow" %}
-{% set version = "0.19.1" %}
+{% set version = "0.19.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
-  sha256: 3075003d523e48f6fca42417535173719da02e9b713f15522470c2db624a5297
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow-{{ version }}.tar.gz
+  sha256: 7af56281f9fe2535b0c9ebce884979973b927a659fbe5192f5829b9e7cb2a134
 
 build:
   noarch: python
@@ -34,9 +34,9 @@ requirements:
     - flowrep >=0.6.0,<0.7.0
     - pint >=0.24,<=0.25.3
     - pyiron_snippets >=1.3.0,<2.0.0
-    - rdflib >=7.1.4,<7.7.0
-    - semantikon >=1.4.0,<1.5.0
-    - typeguard >=4.2.0,<4.6.0
+    - rdflib >=7.1.4,<8.0.0
+    - semantikon >=1.4.2,<1.5.0
+    - typeguard >=4.2.0,<5.0.0
 
 test:
   imports:
