@@ -13,7 +13,7 @@ source:
   sha256: 81a3dfde69758f9e069fd570cfb58b04004a58a39819b442087c92cad5672d71
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -31,7 +31,7 @@ requirements:
     - semantikon
     - typeguard
   run:
-    - python >=${{ python_min }},<3.14
+    - python >=${{ python_min }},<3.15
     - executorlib >=1.5.3,<1.11.0
     - flowrep >=0.6.6,<0.7.0
     - pint >=0.24,<=0.25.3
