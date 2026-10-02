@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_workflow
-  version: "0.20.1"
+  version: "0.20.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/pyiron_workflow-${{ version }}.tar.gz
-  sha256: e7f6e45a28d12022f05f01cee36c05b9a739afa216b2851d0a73a4dd67477d77
+  sha256: 1155c87bddd6de98bfccd9e1c9b34979da0696922e45cea50cb28708936a1be5
 
 build:
   number: 0
